@@ -1,4 +1,4 @@
-name : Github Pages Deploy
+name: Github Pages Deploy
 
 
 on: 
@@ -16,14 +16,15 @@ on:
 
          steps:
          - name: Checkout
-          uses: action/checkout@vl
+          uses: actions/checkout@vl
 
          - name: Install and build
-         run: npm install && npm run build
+          run: npm install && npm run build
 
          - name: Deploy 
-         uses: JamesIves/github-pages-deploy-action@v4.4.0
+           uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
+        branch: gh-pages #the branch the action should deploy to.
           folder: build # The folder the action should deploy.
 
 
