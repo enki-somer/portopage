@@ -22,7 +22,7 @@ on:
          run: npm install && npm run build
 
          - name: Deploy 
-         uses: JamesIves/github-pages-deploy-action@v4
+         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           folder: build # The folder the action should deploy.
 
