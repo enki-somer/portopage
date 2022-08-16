@@ -1,0 +1,116 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about__me {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,
+            transparent,
+            var(--color-primary-variant),
+            transparent);
+    display: grid;
+    place-items: center;
+}
+
+
+
+.about_img {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+
+
+.about_img:hover {
+    transform: rotate(0deg);
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.abot_card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.abot_card:hover {
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about_icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.abot_card h5 {
+    font-size: 1.1rem;
+
+}
+
+.abot_card small {
+    font-size: 0.84rem;
+
+}
+
+.about__content p {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+/*=================== Media QUERIESE(MEDIUM DEVICES) =========*/
+
+
+@media screen and (max-width:1024px) {
+    .about__container {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about__me {
+        margin: 2rem auto 4rem;
+        width: 50%
+    }
+
+    .about__content p {
+        margin: 1rem 0 1.5rem
+    }
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+
+@media screen and (max-width:600px) {
+    .about__me {
+        margin: 0 auto 3rem;
+        width: 65%
+    }
+
+    .about__cards {
+        gap: 1rem;
+        grid-template-columns: 1fr
+    }
+
+    .about__content {
+        text-align: center
+    }
+
+    .about__content p {
+        margin: 1.5rem 0
+    }
+}
