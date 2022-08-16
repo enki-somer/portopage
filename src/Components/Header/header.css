@@ -28,9 +28,9 @@ header {
 
 .header__container h4 {
     font-size: 1.5rem;
-    left: 40%;
+    left: 38%;
     top: 40%;
-    transform: translate(-40%, -40%);
+    transform: translate(-38%, -40%);
     position: absolute;
     width: max-content;
     opacity: 0;
@@ -180,10 +180,12 @@ h1::after {
         font-size: 2rem;
         position: absolute;
         top: 80%;
-        left: 25%;
-        transform: translate(-25%, 80%);
+        left: 27%;
+        transform: translate(-27%, 80%);
         line-height: 2.8rem;
         color: black;
+        opacity: 0;
+        transform: translateY(3rem);
     }
 
     h1::before {
